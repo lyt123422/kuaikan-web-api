@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kuaikan-web-api"
+version = "0.1.0"
+description = "快看漫画 PC Web 端 API 客户端（逆向研究 / 个人阅读用途）"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "lyt123422" }]
+keywords = ["kuaikan", "comic", "api", "reverse-engineering"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+  "httpx>=0.27",
+  "playwright>=1.40",
+]
+
+[tool.setuptools]
+packages = ["kuaikan_api"]
